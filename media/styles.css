@@ -47,7 +47,10 @@ body {
     font-weight: 500;
     font-style: normal;
     line-height: 1.2;
-    color: #222
+    color: #222;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 a, a:visited {
@@ -82,12 +85,17 @@ nav .home {
 
 .content {
     width: 80vw;
-    margin: 2em auto;
+    margin: 2em auto 0;
 }
 
 .realm-navigation {
     display: flex;
     justify-content: space-between;
+}
+
+.whitespace {
+    flex: 1;
+    min-height: 2em;
 }
 
 .realm-navigation article {
@@ -118,8 +126,6 @@ footer nav {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100vw;
     border-top: 1px solid;
 }
