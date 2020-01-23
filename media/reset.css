@@ -41,19 +41,3 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-body {
-    font-family: Helvetica, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.2;
-    color: #222;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-a, a:visited {
-    text-decoration: none;
-    color: inherit;
-}
