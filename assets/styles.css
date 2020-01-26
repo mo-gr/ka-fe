@@ -83,13 +83,14 @@ nav .home {
 }
 .realm-navigation article div {
     position: absolute;
-    top: 1em;
+    top: 0;
     left: 0;
     right: 0;
     font-size: 2em;
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
+    padding: 1em;
 }
 
 .realm-navigation article::before {
@@ -106,8 +107,17 @@ nav .home {
 .realm-navigation article.health-coach::before {
     background: url("./MonoFlower.jpg");
     background-size: cover;
-    background-origin: content-box;
     background-position-y: center;
+}
+.realm-navigation article.pm::before {
+    background: url("./PM.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+.realm-navigation article.yoga::before {
+    background: url("./Yoga.jpg");
+    background-size: cover;
+    background-position-x: 87%;
 }
 
 .connect {
@@ -132,9 +142,11 @@ nav .home {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
+    flex-direction: row;
 }
 .bullets img {
-    width: 50%;
+    align-self: flex-start;
+    width: 40%;
 }
 .bullets ul {
     list-style: disc inside;
@@ -158,9 +170,15 @@ nav .home {
     flex-wrap: wrap;
 }
 
-.gallery img {
+.gallery div {
     width: 100%;
     margin-bottom: 1em;
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 h3 {
@@ -211,7 +229,7 @@ footer {
         width: 20%;
         margin-bottom: 1em;
     }
-    .gallery img {
+    .gallery div {
         width: 48%;
         margin-bottom: 1em;
     }
