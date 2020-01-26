@@ -75,7 +75,21 @@ nav .home {
     text-align: center;
     box-shadow: 0 0 5px #111;
     line-height: 2em;
-    margin-bottom: 2em;
+    position: relative;
+    transition: all 0.1s ease-in-out;
+}
+.realm-navigation article:hover {
+    transform: scale(1.02);
+}
+.realm-navigation article div {
+    position: absolute;
+    top: 1em;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
 }
 
 .realm-navigation article::before {
