@@ -73,7 +73,7 @@ nav .home {
 .realm-navigation article {
     width: 60vw;
     text-align: center;
-    box-shadow: 0px 0px 5px #111;
+    box-shadow: 0 0 5px #111;
     line-height: 2em;
     margin-bottom: 2em;
 }
@@ -96,6 +96,87 @@ nav .home {
     background-position-y: center;
 }
 
+.connect {
+    display: flex;
+    justify-content: center;
+}
+
+.mail:hover .icon path {
+    d: path("M16.5 3l-12.5 11v14.006c0 1.101 0.89 1.994 2.004 1.994h20.993c1.107 0 2.004-0.895 2.004-1.994v-14.006l-12.5-11zM13.5 23h6l7 6h-20l7-6zM16.5 4.3l11 9.7-9 8h-4l-9-8 11-9.7zM27.685 28.725l-7.685-6.708 8-7.017v13c0 0.283-0.121 0.542-0.315 0.725v0 0zM5.315 28.725v0 0c-0.194-0.183-0.315-0.442-0.315-0.725v-13l8 7.017-7.685 6.708z");
+}
+
+.icon {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.bullets {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.bullets img {
+    width: 50%;
+}
+.bullets ul {
+    list-style: circle inside;
+    width: 40%;
+}
+
+.four-way {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.four-way > * {
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+footer nav {
+    width: 80vw;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav article {
+    width: 25%;
+}
+footer nav article:nth-child(2) {
+    text-align: center;
+}
+footer nav article:last-child {
+    text-align: right;
+}
+
+footer {
+    width: 100vw;
+    border-top: 1px solid;
+}
+
 @media screen and (min-width: 800px) {
     .realm-navigation {
         justify-content: space-between;
@@ -107,16 +188,18 @@ nav .home {
         width: 23vw;
         height: 27vw;
     }
-}
-
-footer nav {
-    width: 80vw;
-    margin: 1em auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer {
-    width: 100vw;
-    border-top: 1px solid;
+    .four-way {
+        flex-wrap: nowrap;
+    }
+    .four-way > * {
+        width: 20%;
+        margin-bottom: 1em;
+    }
+    .gallery img {
+        width: 48%;
+        margin-bottom: 1em;
+    }
+    footer nav article {
+        width: 33%;
+    }
 }
