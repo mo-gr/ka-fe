@@ -189,6 +189,10 @@ h3:after {
     content: ':'
 }
 
+strong {
+    font-weight: 700;
+}
+
 footer nav {
     width: 80vw;
     margin: 1em auto;
