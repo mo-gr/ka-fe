@@ -51,7 +51,7 @@ nav .home {
 }
 
 .hero-image {
-    background: url("./MonoFlower.jpg");
+    background: url("Header_MonoFlower.jpg");
     background-size: cover;
     background-origin: content-box;
     background-position-y: 50%;
@@ -105,24 +105,24 @@ nav .home {
     display: block;
     width: 60vw;
     height: 60vw;
-    background: url("./Katja.jpeg");
+    background: url("Profile_Katja.jpeg");
     background-size: cover;
     background-origin: content-box;
     background-position-x: center;
 }
 
 .realm-navigation article.health-coach::before {
-    background: url("./MonoFlower.jpg");
+    background: url("Header_MonoFlower.jpg");
     background-size: cover;
     background-position-y: center;
 }
 .realm-navigation article.pm::before {
-    background: url("./PM.jpg");
+    background: url("Header_PM.jpg");
     background-size: cover;
     background-position-y: center;
 }
 .realm-navigation article.yoga::before {
-    background: url("./Yoga.jpg");
+    background: url("Header_Yoga.jpg");
     background-size: cover;
     background-position-x: 87%;
 }
@@ -194,15 +194,15 @@ nav .home {
     content: 'ॐ';
 }
 .card li.passion:before {
-    background: url('./heart.svg') no-repeat;
+    background: url('icon_heart.svg') no-repeat;
     background-size: 20px 20px;
 }
 .card li.location:before {
-    background: url('./location.svg') no-repeat;
+    background: url('icon_location.svg') no-repeat;
     background-size: 20px 20px;
 }
 .card li.language:before {
-    background: url('./bubble2.svg') no-repeat;
+    background: url('icon_language.svg') no-repeat;
     background-size: 20px 20px;
 }
 
