@@ -151,9 +151,9 @@ nav .home {
     margin-bottom: 1em;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid #ddd;
     background-color: #ddd;
     padding: 1em;
+    box-shadow: 0 0 10px #ddd;
 }
 
 .card h2 {
@@ -194,15 +194,15 @@ nav .home {
     content: 'ॐ';
 }
 .card li.passion:before {
-    background: url('./heart.png') no-repeat;
+    background: url('./heart.svg') no-repeat;
     background-size: 20px 20px;
 }
 .card li.location:before {
-    background: url('./location.png') no-repeat;
+    background: url('./location.svg') no-repeat;
     background-size: 20px 20px;
 }
 .card li.language:before {
-    background: url('./bubble2.png') no-repeat;
+    background: url('./bubble2.svg') no-repeat;
     background-size: 20px 20px;
 }
 
