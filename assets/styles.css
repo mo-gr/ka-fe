@@ -147,9 +147,10 @@ nav .home {
 
 .card {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 1em;
     flex-direction: row;
+    flex-wrap: wrap;
     border: 2px solid #ddd;
     background-color: #ddd;
     padding: 1em;
@@ -161,12 +162,13 @@ nav .home {
 
 .card img {
     align-self: flex-start;
-    width: 30vw;
-    height: 30vw;
+    width: 70vw;
+    height: 70vw;
     object-fit: cover;
+    margin-bottom: 1em;
 }
 .card div {
-    width: 55%;
+    width: 70vw;
 }
 .card ul {
     list-style: none;
@@ -297,6 +299,19 @@ footer a, footer a:visited {
     .realm-navigation article::before {
         width: 24vw;
         height: 27vw;
+    }
+    .card {
+        justify-content: space-between;
+    }
+    .card img {
+        width: 30vw;
+        height: 30vw;
+        max-width: 300px;
+        max-height: 300px;
+        margin-bottom: 0;
+    }
+    .card div {
+        width: 55%;
     }
     .four-way {
         flex-wrap: nowrap;
