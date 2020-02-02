@@ -61,6 +61,7 @@ nav .home {
 
 .content {
     width: 80vw;
+    max-width: 1000px;
     margin: 2em auto 0;
 }
 
@@ -294,8 +295,11 @@ footer a, footer a:visited {
     }
     .realm-navigation article {
         width: 24vw;
+        max-width: 300px;
     }
     .realm-navigation article::before {
+        max-width: 300px;
+        max-height: 360px;
         width: 24vw;
         height: 27vw;
     }
