@@ -110,7 +110,11 @@ nav .home {
     background-origin: content-box;
     background-position-x: center;
 }
-
+.realm-navigation article.yoga::before {
+    background: url("Test2.jpg");
+    background-size: cover;
+    background-position-x: left;
+}
 .realm-navigation article.health-coach::before {
     background: url("Header_MonoFlower.jpg");
     background-size: cover;
@@ -120,11 +124,6 @@ nav .home {
     background: url("Header_PM.jpg");
     background-size: cover;
     background-position-y: center;
-}
-.realm-navigation article.yoga::before {
-    background: url("Header_Yoga.jpg");
-    background-size: cover;
-    background-position-x: 87%;
 }
 
 .connect {
