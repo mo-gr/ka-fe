@@ -13,6 +13,104 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+        .signup-button {
+            padding: 10px 2em;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #1BF8DF;
+            border: none;
+            font-weight: 700;
+        }
+
+        #signup-toggle {
+            visibility: hidden;
+            display: none;
+        }
+
+        .signup-form {
+            visibility: hidden;
+        }
+
+        .signup-form > .container {
+            display: flex;
+            width: 90vw;
+            max-width: 500px;
+            background: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%, 300%);
+            transition: transform 1s ease-out;
+            padding: 2em;
+        }
+
+        .signup-form::before {
+            content: '';
+            background: rgba(0,0,0,0);
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            transition: background-color 1s ease-out;
+        }
+
+        #signup-toggle:checked + .signup-form {
+            visibility: visible;
+        }
+
+        #signup-toggle:checked + .signup-form::before {
+            background: rgba(0,0,0,0.7);
+        }
+
+        #signup-toggle:checked + .signup-form > .container{
+            transform: translate(-50%, -50%);
+        }
+
+        /*Mailchimp override*/
+        #mc_embed_signup {
+            width: 100%;
+        }
+        #mc_embed_signup input[type=text], #mc_embed_signup input[type=email] {
+            border-radius: 0;
+            margin-bottom: 1em;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.5em;
+        }
+        #mc_embed_signup .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
+        }
+        #mc_embed_signup form {
+            padding: 0;
+        }
+        .container #mc_embed_signup .mce_inline_error,
+        .container #mc_embed_signup input.mce_inline_error,
+        .container #mc_embed_signup input.mce_inline_error::placeholder,
+        .container #mc_embed_signup div.mce_inline_error {
+            color: #b10f0f;
+            background: none;
+        }
+        .container #mc_embed_signup input.mce_inline_error {
+            border-style: solid;
+            border-color: #b10f0f;
+        }
+        .container #mc_embed_signup div.mce_inline_error {
+            font-size: 12px;
+            padding: 0;
+            margin: -1em 0 1em 0;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -40,6 +138,7 @@
 <section class="content">
     <article>
         <h1>LP for FreeBie zum Download</h1>
+    </article>
     <section class="whitespace"></section>
     <article>
         on Hero Image:
@@ -49,7 +148,39 @@
         <p>In this free guide, you'll craft your own health journey to reduce your stress level and increase your resilience with Katja Feil, graduate Primal Health Coach Institute and Yoga Teacher.
         <p>
     </article>
-
+        <label for="signup-toggle" class="signup-button">Get your freebee!</label>
+</section>
+<input type="checkbox" id="signup-toggle" name="signup-toggle"/>
+<section class="signup-form">
+    <div class="container">
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="https://katjafeil.us19.list-manage.com/subscribe/post?u=574379c093973c954133c1ed4&amp;id=6efb0894ec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <h2>Subscribe</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam consequatur corporis cum enim hic magnam provident velit veniam. Accusantium deserunt libero optio unde! Blanditiis fugiat illum ratione reprehenderit.</p>
+                    <div class="mc-field-group">
+                        <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="First Name">
+                    </div>
+                    <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                               placeholder="E-Mail">
+                    </div>
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_574379c093973c954133c1ed4_6efb0894ec" tabindex="-1" value=""></div>
+                        <div class="clear button-container">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                   class="button signup-button">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='MMERGE6';ftypes[6]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+    </div>
 </section>
 <section class="whitespace"></section>
 <footer>
