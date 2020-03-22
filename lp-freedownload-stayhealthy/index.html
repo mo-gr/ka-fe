@@ -15,12 +15,21 @@
     <link rel="stylesheet" href="../assets/styles.css">
     <style>
         .signup-button {
-            padding: 10px 2em;
+            padding: 14px 2em;
             cursor: pointer;
             font-size: 16px;
             background-color: #1BF8DF;
             border: none;
             font-weight: 700;
+            white-space: nowrap;
+            width: 150px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+
+        .signup-content .signup-button {
+            margin-bottom: 32px;
         }
 
         #signup-toggle {
@@ -34,7 +43,7 @@
 
         .signup-form > .container {
             display: flex;
-            width: 90vw;
+            width: 70vw;
             max-width: 500px;
             background: white;
             position: fixed;
@@ -87,8 +96,6 @@
         }
         #mc_embed_signup .button-container {
             width: 100%;
-            display: flex;
-            justify-content: center;
             margin-top: 1em;
         }
         #mc_embed_signup form {
@@ -134,21 +141,17 @@
     </script>
 
 </header>
-<section class="hero-image"></section>
-<section class="content">
+<section class="signup-image"></section>
+<section class="signup-content">
     <article>
-        <h1>LP for FreeBie zum Download</h1>
-    </article>
-    <section class="whitespace"></section>
-    <article>
-        on Hero Image:
-        You are a powerful, successful woman - ut sometimes you struggle on the inside and feel lost on the way. You experience stress, fear, and anxiety.
-        <p>How To Plan Your Health Journey So You Can Enjoy your Life more than ever.
-        <p>CTA Download Now
-        <p>In this free guide, you'll craft your own health journey to reduce your stress level and increase your resilience with Katja Feil, graduate Primal Health Coach Institute and Yoga Teacher.
         <p>
-    </article>
+            You are a powerful, successful woman - ut sometimes you struggle on the inside and feel lost on the way. You experience stress, fear, and anxiety.
+        </p>
+        <h1>How To Plan Your Health Journey So You Can Enjoy your Life more than ever.</h1>
         <label for="signup-toggle" class="signup-button">Get your freebee!</label>
+        <p>In this free guide, you'll craft your own health journey to reduce your stress level and increase your
+            resilience with Katja Feil, graduate Primal Health Coach Institute and Yoga Teacher.</p>
+    </article>
 </section>
 <input type="checkbox" id="signup-toggle" name="signup-toggle"/>
 <section class="signup-form">
