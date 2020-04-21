@@ -62,7 +62,7 @@ nav .home {
     height: 30vh;
 }
 
-.signup-image {
+.signup-image-freebie {
     background: url("Header_MonoFlower.jpg");
     background-size: cover;
     background-origin: content-box;
@@ -70,6 +70,16 @@ nav .home {
     transform: scaleX(-1);
     width: 100%;
     height: 80vh;
+    max-height: 1000px
+}
+
+.signup-image-5D {
+    background: url("Ant.jpg");
+    background-size: cover;
+    background-origin: content-box;
+    background-position-y: 50%;
+    width: 100%;
+    height: 84vh;
     max-height: 1000px
 }
 
