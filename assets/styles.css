@@ -62,16 +62,6 @@ nav .home {
     height: 30vh;
 }
 
-.signup-image-5D {
-    background: url("Java.jpg");
-    background-size: cover;
-    background-origin: content-box;
-    background-position-y: 50%;
-    width: 100%;
-    height: 84vh;
-    max-height: 1000px
-}
-
 .signup-content {
     width: 90vw;
     position: absolute;
