@@ -85,6 +85,15 @@ nav .home {
     margin: 2em auto 0;
 }
 
+.content-foot-note {
+    width: 80vw;
+    max-width: 1000px;
+    margin: 2em auto 0;
+    font-size: 0.7em;
+    color: #777;
+    font-style: italic;
+}
+
 .realm-navigation {
     display: flex;
     justify-content: center;
